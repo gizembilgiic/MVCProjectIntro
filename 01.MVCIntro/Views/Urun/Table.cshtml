@@ -1,0 +1,22 @@
+﻿@model List<Urun>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Adi</th>
+                <th>Fiyat</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var urun in Model)
+            {
+                <tr>
+                    <td>@urun.Id</td>
+                    <td>@urun.Ad</td>
+                    <td>@urun.Fiyat</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
